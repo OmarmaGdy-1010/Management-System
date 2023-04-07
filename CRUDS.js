@@ -9,7 +9,7 @@ let category = document.getElementById("category");
 let submit = document.getElementById("submit");
 let Escap = document.getElementById("ESC");
 
-
+title.focus()
 
 function gettotal() {
     if (price.value != "" && taxes.value != '' && ads.value != '') {
@@ -87,7 +87,7 @@ function showData() {
     for (let i = 0; i < dataPro.length; i++) {
         table += `
                         <tr>
-                            <td>${i}</td>
+                            <td>${i+1}</td>
                             <td>${dataPro[ i ].title}</td>
                             <td>${dataPro[ i ].price}</td>
                             <td>${dataPro[ i ].taxes}</td>
